@@ -1,0 +1,354 @@
+BEGIN_QUESTION
+ID|Q1
+Question_title|FIREWALL COMPROMISED
+Narrative|The first layer of security is the firewall (crackling static). Now corrupted by MalX, you must solve basic IT trivia to restore it.
+Hint|A firewall filters incoming and outgoing network traffic.
+Question|What is the primary function of a firewall in cybersecurity?
+Correct_answer|A) To filter and monitor network traffic
+A|To filter and monitor network traffic|Q2
+B|To increase internet speed|Q1R1
+C|To store passwords securely|Q1R2
+D|To hack into other systems|Q1R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R1
+Question_title|DNS DILEMMA
+Narrative|MalX corrupts your cache recover by recalling DNS basics.
+Hint|DNS resolves names to addresses.
+Question|Which service translates domain names into IP addresses?
+Correct_answer|B) DNS
+A|HTTP|Q2
+B|DNS|Q2
+C|FTP|Q2
+D|SMTP|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R2
+Question_title|PASSWORD POWER-UP
+Narrative|Your password was too simple learn what makes one strong.
+Hint|Length and randomness boost strength.
+Question|What characteristic most increases a passwords strength?
+Correct_answer|D) Length and randomness
+A|Using common words|Q2
+B|Reusing across sites|Q2
+C|Adding sequential numbers|Q2
+D|Length and randomness|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R3
+Question_title|INTRUSION FAILURE
+Narrative|Hacking doesn’t replace a firewall—retry carefully.
+Hint|Firewalls block unauthorized network traffic.
+Question|Which statement is true of firewalls?
+Correct_answer|A) They can block unauthorized access.
+A|They can block unauthorized access.|Q2
+B|They speed up your internet.|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2
+Question_title|LOGIC GATE ACCESS
+Narrative|You bypass the terminal lock. Now solve a logic puzzle under MalX’s glitch.
+Hint|AND gates output 1 only if both inputs are 1.
+Question|What is the output of an AND gate when both inputs are 1?
+Correct_answer|A) 1
+A|1|Q6
+B|0|Q2R1
+C|Depends on inputs|Q2R2
+D|False|Q2R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R1
+Question_title|LOOP DEFINED
+Narrative|MalX distorts logic—reroute through a coding puzzle.
+Hint|A do-while loop executes at least once.
+Question|Which loop type always runs its body at least once?
+Correct_answer|B) do-while loop
+A|for loop|Q6
+B|do-while loop|Q6
+C|while loop|Q6
+D|if statement|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R2
+Question_title|GATE SWAP
+Narrative|You mixed up gates—reinforce fundamentals.
+Hint|OR gates output 1 if any input is 1.
+Question|Which logic gate outputs 1 when at least one input is 1?
+Correct_answer|B) OR
+A|AND|Q6
+B|OR|Q6
+C|XOR|Q6
+D|NAND|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R3
+Question_title|SYNTAX SCRAMBLE
+Narrative|Symbols scrambled—simplify the puzzle.
+Hint|Logical AND in C++ is &&.
+Question|Which symbol denotes the logical AND operator in C++?
+Correct_answer|B) &&
+A|&|Q6
+B|&&|Q6
+C||| |Q6
+D|==|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6
+Question_title|NETWORK RECOVERY
+Narrative|Firewall fragments reassembling—answer to maintain stability.
+Hint|A router directs packets between networks.
+Question|Which device connects multiple computers and routes data?
+Correct_answer|B) Router
+A|Monitor|Q6R1
+B|Router|Q18
+C|Hard Drive|Q6R2
+D|Printer|Q6R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R1
+Question_title|VISUAL DISTRACTION
+Narrative|MalX distorts displays—monitors show images, they don’t route packets.
+Hint|Network devices forward data.
+Question|Can a monitor route network packets?
+Correct_answer|B) False
+A|True|Q18
+B|False|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R2
+Question_title|STORAGE SPIN-UP
+Narrative|Your hint buried—hard drives spin platters to store data.
+Hint|Remember mechanical vs solid-state.
+Question|Which storage device uses spinning platters?
+Correct_answer|A) HDD
+A|HDD|Q18
+B|RAM|Q18
+C|SSD|Q18
+D|CPU cache|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R3
+Question_title|PRINT JAM
+Narrative|MalX jumbles hardware functions—printers put ink on paper.
+Hint|Not a routing device.
+Question|Which peripheral prints documents on paper?
+Correct_answer|B) Printer
+A|Keyboard|Q18
+B|Printer|Q18
+C|Monitor|Q18
+D|Mouse|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18
+Question_title|FIREWALL RESTORED?
+Narrative|As firewall fragments reassemble, MalX injects a glitch—prove your OSI knowledge.
+Hint|Switches operate at the Data Link layer in the OSI model.
+Question|At which OSI model layer does a network switch primarily operate?
+Correct_answer|B) Data Link Layer
+A|Physical Layer|Q18R1
+B|Data Link Layer|Q44
+C|Network Layer|Q18R2
+D|Transport Layer|Q18R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R1
+Question_title|OSI MISLAYERED
+Narrative|Glitch misleads you—Physical layer transmits bits, not switching.
+Hint|Data Link layer handles MAC addressing and switching.
+Question|Which OSI model layer handles MAC addressing and switch operations?
+Correct_answer|B) Data Link Layer
+A|Physical Layer|Q44
+B|Data Link Layer|Q44
+C|Session Layer|Q44
+D|Application Layer|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R2
+Question_title|PACKET PASS
+Narrative|MalX tries to reroute you—switches forward frames, not packets.
+Hint|Data Link uses frames; Network uses packets.
+Question|Which PDU does a switch forward in the OSI model?
+Correct_answer|A) Frames
+A|Frames|Q44
+B|Packets|Q44
+C|Segments|Q44
+D|Bits|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R3
+Question_title|SEGMENT SCRAMBLE
+Narrative|Transport layer segments data end-to-end, not switching.
+Hint|Data Link layer works with frames.
+Question|Which layer of the OSI model uses frames for data transfer between devices?
+Correct_answer|B) Data Link Layer
+A|Network Layer|Q44
+B|Data Link Layer|Q44
+C|Transport Layer|Q44
+D|Physical Layer|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44
+Question_title|PACKET ANALYZER CHECK
+Narrative|As you inspect captured packets, MalX feeds deceptive hints—identify the right field.
+Hint|Protocol Number reveals the transport protocol in packet headers.
+Question|Which field tells you the transport protocol in a packet capture?
+Correct_answer|B) Protocol Number
+A|Source IP Address|Q44R1
+B|Protocol Number|Q45
+C|Destination MAC Address|Q44R2
+D|Port Number|Q44R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R1
+Question_title|FIELD MISREAD
+Narrative|Source IP shows the sender’s address, not the protocol.
+Hint|Protocol Number field indicates the protocol type.
+Question|Which field in a packet capture indicates the transport protocol being used?
+Correct_answer|B) Protocol Number
+A|Source IP Address|Q45
+B|Protocol Number|Q45
+C|Destination Port|Q45
+D|Frame Length|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R2
+Question_title|MAC CONFUSION
+Narrative|MAC addresses identify hardware, not protocol.
+Hint|Protocol Number sits in the IP header.
+Question|Which header field specifies the transport protocol in IPv4 packets?
+Correct_answer|B) Protocol Number
+A|Ethernet Type|Q45
+B|Protocol Number|Q45
+C|Source MAC Address|Q45
+D|Time to Live|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R3
+Question_title|PORT MIX-UP
+Narrative|Port number shows application endpoints, not protocol type.
+Hint|Protocol Number is a separate IP header field.
+Question|Which field identifies the transport protocol in an IPv4 header?
+Correct_answer|B) Protocol Number
+A|Source Port|Q45
+B|Protocol Number|Q45
+C|Destination Port|Q45
+D|Header Checksum|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45
+Question_title|MALWARE HEURISTIC
+Narrative|MalX’s heuristic engine is tripped. Understand antivirus methods.
+Hint|Heuristic detection analyzes behavior patterns of code.
+Question|Heuristic antivirus detects unknown malware based on behavior patterns.
+Correct_answer|A) True
+A|True|Q46
+B|False|Q45R1
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45R1
+Question_title|PATTERN OVERSIGNAL
+Narrative|False alarms can occur—signature-based detection relies on known patterns.
+Hint|Signature-based detection uses hash comparisons.
+Question|Which antivirus method uses known malware signatures to identify threats?
+Correct_answer|B) Signature-based
+A|Heuristic|Q46
+B|Signature-based|Q46
+C|Sandboxing|Q46
+D|Behavioral|Q46
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46
+Question_title|SCRIPTING DEFENSE
+Narrative|MalX attempts XSS—select the correct header to block scripts.
+Hint|CSP header restricts sources of executable scripts.
+Question|Which HTTP header can mitigate cross-site scripting (XSS) attacks?
+Correct_answer|C) Content-Security-Policy
+A|X-Frame-Options|Q46R1
+B|Cache-Control|Q46R2
+C|Content-Security-Policy|Q60
+D|Strict-Transport-Security|Q46R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R1
+Question_title|FRAME FOCUS
+Narrative|X-Frame-Options prevents clickjacking, not XSS mitigation.
+Hint|CSP controls script sources.
+Question|Which header specifically allows defining permitted script sources?
+Correct_answer|C) Content-Security-Policy
+A|X-Frame-Options|Q60
+B|Content-Type|Q60
+C|Content-Security-Policy|Q60
+D|Referrer-Policy|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R2
+Question_title|CACHE CONFUSION
+Narrative|Cache-Control manages caching, not script execution.
+Hint|CSP is designed for security policy.
+Question|Which HTTP header enforces content security policy for scripts?
+Correct_answer|C) Content-Security-Policy
+A|Cache-Control|Q60
+B|ETag|Q60
+C|Content-Security-Policy|Q60
+D|Vary|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R3
+Question_title|TRANSPORT TWIST
+Narrative|HSTS enforces transport security, not script source control.
+Hint|CSP defines allowed content sources.
+Question|Which header enables you to whitelist script sources?
+Correct_answer|C) Content-Security-Policy
+A|Strict-Transport-Security|Q60
+B|Transfer-Encoding|Q60
+C|Access-Control-Allow-Origin|Q60
+D|Content-Security-Policy|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60
+Question_title|FULL SYSTEM ACCESS GRANTED!
+Narrative|Congratulations, you have fully restored the firewall and system. MalX has been defeated!
+Hint|You’ve completed the Level 1 challenge.
+Question|Did you enjoy the challenge?
+Correct_answer|A) Yes
+A|Yes|END
+B|No|Q60R1
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60R1
+Question_title|ALMOST VICTORY
+Narrative|You’ve succeeded but can refine your performance in the next level.
+Hint|Review what you learned before proceeding.
+Question|Ready to begin Level 2?
+Correct_answer|A) Yes
+A|Yes|END
+B|No|END
+END_QUESTION
+

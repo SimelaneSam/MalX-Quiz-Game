@@ -1,0 +1,385 @@
+BEGIN_QUESTION
+ID|Q1
+Question_title|CONSTEXPR EVALUATION
+Narrative|The terminal flickers red as MalX hurls a compile-time gauntlet: which C++ keyword lets functions execute before the program even starts?
+Hint|Use constexpr for compile-time funcs.
+Question|Which keyword allows a function to be evaluated at compile time in C++?
+Correct_answer|A) constexpr
+A|constexpr|Q2
+B|inline|Q1R1
+C|static|Q1R2
+D|virtual|Q1R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R1
+Question_title|CRTP PATTERN
+Narrative|Your CRTP trick compiles, but the lock remains closed—static polymorphism alone won’t satisfy MalX’s compile-time demand.
+Hint|constexpr is required for compile-time execution.
+Question|In CRTP, a class Derived inherits from which base?
+Correct_answer|C) Base<Derived>
+A|Derived<Base>|Q2
+B|Base|Q2
+C|Base<Derived>|Q2
+D|Derived<Derived>|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R2
+Question_title|LAMBDA CAPTURE
+Narrative|You deploy a capturing lambda, yet MalX’s firewall of corrupted code stands firm—capture lists don’t force compile-time logic.
+Hint|Capture by reference or value.
+Question|Which capture list copies variables into a C++ lambda?
+Correct_answer|A) [&]
+A|[&]|Q2
+B|[=]|Q2
+C|[this]|Q2
+D|[]|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R3
+Question_title|MOVE SEMANTICS
+Narrative|You wrench objects into rvalues with std::move, but MalX snarls—move semantics won’t compel compile-time execution.
+Hint|std::move enables rvalue binds.
+Question|Which std function converts an lvalue into an rvalue reference?
+Correct_answer|B) std::move
+A|std::forward|Q2
+B|std::move|Q2
+C|std::copy|Q2
+D|std::swap|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2
+Question_title|TEMPLATE METAPROGRAMMING
+Narrative|A template labyrinth unfolds on the screen; only true metaprogramming can decrypt the next piece of MalX’s virus.
+Hint|Use class templates recursively.
+Question|Which technique uses templates to compute values at compile time?
+Correct_answer|B) Metaprogramming
+A|Polymorphism|Q2R1
+B|Metaprogramming|Q6
+C|Reflection|Q2R2
+D|Serialization|Q2R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R1
+Question_title|NOEXCEPT GUARANTEE
+Narrative|You declare noexcept, but the terminal’s encryption remains intact—exception specs won’t drive compile-time calculations.
+Hint|Specify functions won’t throw.
+Question|Which specifier prevents a function from propagating exceptions?
+Correct_answer|C) noexcept
+A|throw()|Q6
+B|__declspec(nothrow)|Q6
+C|noexcept|Q6
+D|nothrow|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R2
+Question_title|UNIQUE_PTR USAGE
+Narrative|You guard your memory with std::unique_ptr sentinels, but MalX warns this won’t unravel its template puzzle.
+Hint|std::unique_ptr prohibits copying.
+Question|Which smart pointer enforces unique ownership in C++?
+Correct_answer|A) std::unique_ptr
+A|std::unique_ptr|Q6
+B|std::shared_ptr|Q6
+C|std::weak_ptr|Q6
+D|std::auto_ptr|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R3
+Question_title|SHARED_PTR LEAK
+Narrative|You break ownership cycles with std::weak_ptr, yet MalX’s encryption remains—weak pointers won’t trigger compile-time logic.
+Hint|Use weak_ptr to break cycles.
+Question|Which pointer helps break std::shared_ptr cycles?
+Correct_answer|B) std::weak_ptr
+A|std::unique_ptr|Q6
+B|std::weak_ptr|Q6
+C|std::auto_ptr|Q6
+D|std::shared_ptr|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6
+Question_title|VIRTUAL DESTRUCTOR
+Narrative|MalX corrupts base pointers; only a virtual destructor can guarantee safe cleanup of derived fragments in its chaotic realm.
+Hint|Polymorphic deletion needs this.
+Question|Which ensures derived destructors run when deleting via base pointer?
+Correct_answer|D) virtual destructor
+A|inline destructor|Q6R1
+B|static destructor|Q6R2
+C|constexpr destructor|Q6R3
+D|virtual destructor|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R1
+Question_title|DYNAMIC_CAST RTTI
+Narrative|You invoke dynamic_cast to verify types at runtime, but MalX scoffs—runtime checks won’t fix destruction order.
+Hint|Use dynamic_cast for polymorphic types.
+Question|Which cast checks type at runtime in C++?
+Correct_answer|C) dynamic_cast
+A|static_cast|Q18
+B|reinterpret_cast|Q18
+C|dynamic_cast|Q18
+D|const_cast|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R2
+Question_title|STD::FUTURE ASYNC
+Narrative|You launch async tasks with std::future, but MalX warns that threads and futures won’t alter destructor chains.
+Hint|std::async and futures.
+Question|Which class holds the result of an async operation?
+Correct_answer|A) std::future
+A|std::future|Q18
+B|std::promise|Q18
+C|std::thread|Q18
+D|std::async|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R3
+Question_title|ATOMIC OPERATIONS
+Narrative|You wrap variables in std::atomic, yet MalX jeers—atomic safety can’t guarantee proper cleanup on deletion.
+Hint|Use std::atomic for safe data races.
+Question|Which template ensures atomic access to data?
+Correct_answer|B) std::atomic<T>
+A|volatile T|Q18
+B|std::atomic<T>|Q18
+C|std::mutex|Q18
+D|std::lock|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18
+Question_title|CSRF TOKEN
+Narrative|MalX floods your session with forged requests—only an Anti-CSRF token can unlock the safeguard and deliver the next code fragment.
+Hint|Tokens tie form to session.
+Question|Which control thwarts CSRF attacks?
+Correct_answer|B) Anti-CSRF token
+A|CAPTCHA|Q18R1
+B|Anti-CSRF token|Q44
+C|HTTPS only|Q18R2
+D|Same-origin policy|Q18R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R1
+Question_title|RAII PRINCIPLE
+Narrative|You deploy RAII guards to manage resources, but MalX notes this secures lifetime, not request integrity.
+Hint|Constructors acquire, destructors release.
+Question|What C++ idiom ties resource management to object lifetime?
+Correct_answer|C) RAII
+A|MVC|Q44
+B|CRTP|Q44
+C|RAII|Q44
+D|Pimpl|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R2
+Question_title|OBSERVER PATTERN
+Narrative|You set up an observer network of callbacks, yet MalX reminds you this won’t verify CSRF tokens.
+Hint|Subjects notify observers.
+Question|Which pattern defines a one-to-many dependency?
+Correct_answer|A) Observer
+A|Observer|Q44
+B|Singleton|Q44
+C|Factory|Q44
+D|Adapter|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R3
+Question_title|STRATEGY PATTERN
+Narrative|You swap algorithmic strategies on the fly, but MalX scoffs—dynamic strategies can’t authenticate forms.
+Hint|Encapsulate interchangeable behaviors.
+Question|Which pattern lets you swap algorithms at runtime?
+Correct_answer|B) Strategy
+A|Decorator|Q44
+B|Strategy|Q44
+C|Prototype|Q44
+D|Mediator|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44
+Question_title|CHAOS SECURITY
+Narrative|MalX injects random failures into every module; you must embrace chaos engineering to expose its hidden weaknesses.
+Hint|Inject failures.
+Question|Chaos engineering helps you do what?
+Correct_answer|A) Identify system weaknesses
+A|Identify system weaknesses|Q45
+B|Improve performance|Q44R1
+C|Simplify code|Q44R2
+D|Add features|Q44R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R1
+Question_title|SQL INJECTION DEFENSE
+Narrative|A fragment of MalX’s database lies corrupted; parameterized queries are your only defense against its SQL injection traps.
+Hint|Never concatenate untrusted input.
+Question|Which practice prevents SQL injection?
+Correct_answer|C) Parameterized queries
+A|String concatenation|Q45
+B|Stored procedures|Q45
+C|Parameterized queries|Q45
+D|Dynamic SQL|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R2
+Question_title|CROSS-SITE SCRIPTING
+Narrative|MalX floods your console with malicious scripts; HTML-encoding every output line seals against its XSS ambush.
+Hint|Escape user content.
+Question|Prevent XSS by doing what?
+Correct_answer|A) HTML-encode output
+A|HTML-encode output|Q45
+B|Use eval()|Q45
+C|Allow all input|Q45
+D|Disable cookies|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R3
+Question_title|PASSWORD HASHING
+Narrative|A cleartext password fragment glows on screen; with bcrypt’s slow hashing, you lock it away from MalX’s reach.
+Hint|Use slow hashes.
+Question|Which algorithm is suitable for password hashing?
+Correct_answer|D) bcrypt
+A|MD5|Q45
+B|SHA1|Q45
+C|CRC32|Q45
+D|bcrypt|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45
+Question_title|CERT PINNING
+Narrative|MalX slips in a fake certificate; pinning the correct public-key hash shatters its man-in-the-middle deception.
+Hint|Match public key hashes.
+Question|Certificate pinning ties cert to what?
+Correct_answer|B) Public-key hash
+A|Serial number|Q45R1
+B|Public-key hash|Q46
+C|Issuer name|Q45R2
+D|Validity period|Q45R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45R1
+Question_title|SALT USAGE
+Narrative|You sprinkle unique salts into every hash, turning MalX’s rainbow tables into worthless noise.
+Hint|Add unique salts per password.
+Question|What prevents rainbow-table attacks?
+Correct_answer|A) Unique salt
+A|Unique salt|Q46
+B|Pepper|Q46
+C|Iteration|Q46
+D|Hashing|Q46
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45R2
+Question_title|VULNERABILITY SCAN
+Narrative|You unleash Nessus to probe MalX’s defenses, mapping out every known vulnerability it tried to hide.
+Hint|Use automated scanners.
+Question|Which tool finds known vulnerabilities?
+Correct_answer|C) Nessus
+A|Metasploit|Q46
+B|nmap|Q46
+C|Nessus|Q46
+D|Wireshark|Q46
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45R3
+Question_title|PORT SCANNING
+Narrative|Open ports pulse like flare signals; with nmap -sT you trace every TCP seam in MalX’s network.
+Hint|nmap reveals them.
+Question|Which command lists TCP ports?
+Correct_answer|A) nmap -sT
+A|nmap -sT|Q46
+B|nmap -sU|Q46
+C|nmap -sV|Q46
+D|nmap -O|Q46
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46
+Question_title|DNSSEC VALIDATION
+Narrative|MalX poisons the DNS cache; only RRSIG signatures can authenticate true records and steer you back on course.
+Hint|Digital signatures in DNS.
+Question|DNSSEC uses what to authenticate records?
+Correct_answer|C) RRSIG
+A|TSIG|Q46R1
+B|SPF|Q46R2
+C|RRSIG|Q60
+D|PTR|Q46R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R1
+Question_title|MITM ATTACK
+Narrative|MalX floods ARP tables with lies; understanding ARP poisoning lets you reclaim the network’s traffic streams.
+Hint|Poison ARP caches.
+Question|Which attack spoofs ARP to intercept traffic?
+Correct_answer|B) ARP poisoning
+A|DNS spoofing|Q60
+B|ARP poisoning|Q60
+C|IP spoofing|Q60
+D|MAC flooding|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R2
+Question_title|PHISHING DETECTION
+Narrative|A deceptive email glows in your inbox; spotting mismatched URLs cracks MalX’s phishing snare.
+Hint|Check the URL carefully.
+Question|Which clue often indicates phishing?
+Correct_answer|D) Mismatched URLs
+A|Proper branding|Q60
+B|HTTPS padlock|Q60
+C|Trusted sender|Q60
+D|Mismatched URLs|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R3
+Question_title|BRUTE-FORCE MITIGATION
+Narrative|MalX unleashes a flood of login attempts; only account lockout can slam the door on its brute-force siege.
+Hint|Lockout after attempts.
+Question|Which control thwarts brute-force logins?
+Correct_answer|B) Account lockout
+A|CAPTCHA only|Q60
+B|Account lockout|Q60
+C|Plain HTTP|Q60
+D|Open retries|Q60
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60
+Question_title|ANTIVIRUS DEPLOYED
+Narrative|At last, the antivirus runs—MalX’s code dissolves in a cascade of green, and you reclaim the lab in a triumphant blaze.
+Hint|Celebrate your victory.
+Question|True or False: You have completed the Final Battle.
+Correct_answer|A) True
+A|True|END
+B|False|Q60R1
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60R1
+Question_title|RECOVERY DIAGNOSTIC BETA
+Narrative|Even after victory, echoes of MalX linger—verify that your firewall can block ICMP pings before you leave.
+Hint|Firewalls can block ICMP.
+Question|True or False: A firewall can block ICMP echo (ping).
+Correct_answer|A) True
+A|True|END
+B|False|END
+END_QUESTION

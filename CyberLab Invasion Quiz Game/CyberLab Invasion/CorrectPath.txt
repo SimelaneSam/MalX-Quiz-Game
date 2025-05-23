@@ -1,0 +1,19 @@
+LEVEL_ONE
+Q1 = A -> Q2
+Q2 = A -> Q6
+Q6 = B -> Q18
+Q18 = A -> Q44
+Q44 = B -> Q45
+Q45 = A -> Q46
+Q46 = C -> Q60
+Q60 = A -> END
+
+LEVEL_TWO
+Q1 = A -> Q6
+Q6 = C -> Q18
+Q18 = B -> Q27
+Q27 = B -> Q36
+Q36 = B -> Q43
+Q43 = A -> Q56
+Q56 = B -> Q60
+Q60 = A -> END

@@ -1,0 +1,20 @@
+﻿  Button.cpp
+C:\SFMLProject\SFMLProject\Button.cpp(65,13): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Game.cpp
+  Level.cpp
+C:\SFMLProject\SFMLProject\Level.cpp(81,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SFMLProject\SFMLProject\Level.cpp(85,37): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SFMLProject\SFMLProject\Level.cpp(129,28): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\SFMLProject\SFMLProject\Level.cpp(424,23): warning C4018: '<': signed/unsigned mismatch
+C:\SFMLProject\SFMLProject\Level.cpp(465,23): warning C4018: '<': signed/unsigned mismatch
+C:\SFMLProject\SFMLProject\Level.cpp(475,42): warning C4018: '<': signed/unsigned mismatch
+C:\SFMLProject\SFMLProject\Level.cpp(518,25): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+C:\SFMLProject\SFMLProject\Level.cpp(518,22): warning C4244: 'argument': conversion from 'const double' to 'float', possible loss of data
+C:\SFMLProject\SFMLProject\Level.cpp(1691,59): warning C4018: '<': signed/unsigned mismatch
+  MessageBox.cpp
+  Player.cpp
+  QuestionBank.cpp
+  main.cpp
+  Generating Code...
+C:\SFMLProject\SFMLProject\Loader.h(20,1): warning C4715: 'FileLoader<sf::Music>::load': not all control paths return a value
+  SFMLProject.vcxproj -> C:\SFMLProject\SFMLProject\Debug\SFMLProject.exe

@@ -1,0 +1,473 @@
+BEGIN_QUESTION
+ID|Q1
+Question_title|VARIABLE SCOPE
+Narrative|A shimmering portal inscribed with cryptic runes bars your passage: only variables born inside a function’s embrace can slip through its seal. Determine the correct scope to continue your quest.
+Hint|Local variables live inside functions or blocks.
+Question|In C++, a variable declared inside a function has which scope?
+Correct_answer|A) Local
+A|Local|Q2
+B|Global|Q1R1
+C|Class|Q1R2
+D|File|Q1R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R1
+Question_title|FUNCTION PROTOTYPE
+Narrative|Before you stands a heavy door etched with symbolic signatures. You must craft a flawless function prototype to unlock it—choose wisely.
+Hint|Prototypes declare return and parameter types.
+Question|Which of these is a valid C++ function prototype?
+Correct_answer|B) int add(int, int);
+A|void add();|Q2
+B|int add(int, int);|Q2
+C|add(int a, int b);|Q2
+D|int add a b;|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R2
+Question_title|ARRAY INDEXING
+Narrative|The floor beneath you is a shifting grid of numbered tiles. Only the tile with the correct index will support your weight—step carefully.
+Hint|C++ arrays start at zero.
+Question|Given `int arr[5];` what does `arr[2]` refer to?
+Correct_answer|C) Third element
+A|Second element|Q2
+B|Fourth element|Q2
+C|Third element|Q2
+D|Fifth element|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q1R3
+Question_title|POINTER ARITHMETIC
+Narrative|A stone lever carved like an arrow promises to move you through memory by one slot. Position it correctly, or you risk falling into the void.
+Hint|Incrementing a pointer moves it by one element.
+Question|If `int* p = arr;` what does `p+1` point to?
+Correct_answer|B) arr[1]
+A|arr[0]|Q2
+B|arr[1]|Q2
+C|arr[2]|Q2
+D|arr[-1]|Q2
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2
+Question_title|RECURSION TRACE
+Narrative|You spiral down a twisting staircase echoing with recursive chants. Compute your landing spot before the stairs vanish beneath you.
+Hint|Factorial grows by multiply.
+Question|What is `factorial(3)` if `factorial(n)=n*factorial(n-1)` and `factorial(0)=1`?
+Correct_answer|A) 6
+A|6|Q6
+B|9|Q2R1
+C|3|Q2R2
+D|1|Q2R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R1
+Question_title|CLASS INHERITANCE
+Narrative|You arrive at a grand archway carved with ancestral code. Only the true C++ inheritance keyword will unlock the legacy gates ahead.
+Hint|Public inheritance uses the keyword `public`.
+Question|Which C++ keyword indicates public inheritance?
+Correct_answer|C) public
+A|extends|Q6
+B|inherits|Q6
+C|public|Q6
+D|super|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R2
+Question_title|TEMPLATE SPECIALIZATION
+Narrative|A mystic scroll floats before you, detailing `vector<int>`. Trace its signature exactly to reveal the hidden path.
+Hint|Specialization uses `< >`.
+Question|Which syntax specializes `vector<int>`?
+Correct_answer|B) template<> class vector<int> { … };
+A|class vector<int> {};|Q6
+B|template<> class vector<int> { … };|Q6
+C|vector<int> template<>;|Q6
+D|template<class int> class vector;|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q2R3
+Question_title|STL VECTOR USAGE
+Narrative|A corridor of empty slots swirls around you—only the proper vector method will summon the next element into form.
+Hint|`.push_back()` appends an element to the end.
+Question|Which member adds an element to the end of `std::vector`?
+Correct_answer|A) push_back()
+A|push_back()|Q6
+B|append()|Q6
+C|add()|Q6
+D|insert_end()|Q6
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6
+Question_title|MAP KEY ACCESS
+Narrative|Before a rusted vault, a map of keys awaits—invoke the right lookup to claim the treasure inside.
+Hint|Use `m.at(key)` for bounds-checked access.
+Question|How do you retrieve the value for key `k` in `std::map<int,std::string> m`?
+Correct_answer|D) m.at(k)
+A|m.get(k)|Q6R1
+B|m[k]|Q6R2
+C|m.find(k)|Q10
+D|m.at(k)|Q6R3
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R1
+Question_title|ITERATOR INVALIDATION
+Narrative|The stone walkway trembles—only the correct vector operation keeps your footing secure.
+Hint|Reallocations break pointers.
+Question|Which action invalidates all iterators of a `std::vector`?
+Correct_answer|C) push_back() that reallocates
+A|reserve()|Q18
+B|clear()|Q18
+C|push_back()|Q18
+D|empty()|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R2
+Question_title|EXCEPTION HANDLING
+Narrative|A yawning chasm looms—catch the falling stones with the right C++ block or plunge into the void.
+Hint|Use `try`/`catch` blocks.
+Question|Which block catches thrown exceptions in C++?
+Correct_answer|B) catch(...)
+A|throw|Q18
+B|catch(...)|Q18
+C|finally|Q18
+D|handle|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q6R3
+Question_title|SEGMENTATION FAULT
+Narrative|A ghostly whisper warns of invalid memory—guess the pointer that causes catastrophic collapse.
+Hint|Dereferencing a null pointer causes a segmentation fault.
+Question|Dereferencing which pointer causes a segmentation fault?
+Correct_answer|A) nullptr
+A|nullptr|Q18
+B|this|Q18
+C|&x|Q18
+D|int* p|Q18
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18
+Question_title|STACK VS HEAP
+Narrative|The cavern splits in two: one passage built on the stack, the other on the heap. Choose your footing wisely.
+Hint|Stack is automatic storage; heap is dynamic.
+Question|Which allocation is on the heap?
+Correct_answer|D) new int[10]
+A|int x;|Q18R1
+B|static int x;|Q18R2
+C|int arr[10];|Q18R3
+D|new int[10];|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R1
+Question_title|MEMORY LEAK DETECTION
+Narrative|Water drips through a crack—if you don’t plug the leak, the whole vault will flood. Find the missing operation.
+Hint|Missing `delete[]` causes leaks.
+Question|What causes a heap memory leak in C++?
+Correct_answer|C) Forgetting delete[]
+A|Using free() instead of delete[]|Q44
+B|Deleting a stack variable|Q44
+C|Forgetting delete[]|Q44
+D|Deleting twice|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R2
+Question_title|RACE CONDITION
+Narrative|Gears spin in parallel chambers—without the right synchronization, they crash in chaotic discord.
+Hint|Thread interference on shared data.
+Question|A race condition occurs when threads access shared data without what?
+Correct_answer|B) Synchronization
+A|Parallelism|Q44
+B|Synchronization|Q44
+C|Concurrency|Q44
+D|Deadlock|Q44
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q18R3
+Question_title|MISINFORMATION
+Narrative|A deceptive prompt appears on the screen, tempting you down the wrong path—resist the false claim and choose the true firewall function to clear the glitch.  
+Hint|Firewalls are barriers, not invincibility cloaks.  
+Question|Which is NOT a function of a firewall?  
+Correct_answer|D) Installing software updates  
+A|Blocking traffic|Q44  
+B|Filtering ports|Q44  
+C|Allowing trusted devices|Q44  
+D|Installing software updates|Q44  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45
+Question_title|VISUAL DISTRACTION
+Narrative|A blinding flash of light threatens to derail you—remember that a monitor simply displays images, it doesn’t guide your packets.  
+Hint|Focus on devices that manage data traffic.  
+Question|A monitor can route network packets.  
+Correct_answer|B) False  
+A|True|Q45R1  
+B|False|Q46  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q45R1
+Question_title|FIREWALL RESTORED
+Narrative|The firewall’s core hums back to life around you. Stay alert—MalX will try new tricks next.  
+Hint|Stay alert. MalX won’t give up.  
+Question|A switch works at Layer 2 of the OSI model.  
+Correct_answer|A) True  
+A|True|Q46  
+B|False|Q46  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44
+Question_title|STORAGE ERROR
+Narrative|A mountain of spinning disks stands before you—some store data, but only one type directs traffic. Identify it.  
+Hint|Recheck what routes data.  
+Question|Which is a data storage device?  
+Correct_answer|C) HDD  
+A|Router|Q44R1  
+B|Modem|Q44R2  
+C|HDD|Q45
+D|Switch|Q44R3  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R1
+Question_title|PRINTER JAM
+Narrative|Paper crinkles under your feet as you approach—but this printer can’t send packets. Don’t fall for its paper trail.  
+Hint|Printers output documents, not data packets.  
+Question|Printers are used for data transmission.  
+Correct_answer|B) False  
+A|True|Q45  
+B|False|Q45  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R2
+Question_title|LOOP DEFINED
+Narrative|An enchanted loop of code spirals before you—recognize the pattern that repeats only while its condition holds true.  
+Hint|A for loop is useful for counting.  
+Question|A for loop can be used to iterate over a range of values.  
+Correct_answer|A) True  
+A|True|Q45  
+B|False|Q45  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q44R3
+Question_title|MISUSED IF
+Narrative|A sign flashes “not a loop”—the if statement checks once and moves on. Don’t treat it like a repeating chant.  
+Hint|It controls logic, not repetition.  
+Question|Which structure checks a condition once?  
+Correct_answer|C) if statement  
+A|while loop|Q45 
+B|do-while loop|Q45  
+C|if statement|Q45
+D|for loop|Q45
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46
+Question_title|CASE CLOSED
+Narrative|A court of case statements convenes—only one verdict runs code. Choose wisely to avoid redundancy.  
+Hint|Case statements work with specific values.  
+Question|A case statement can replace a long series of if-else statements.  
+Correct_answer|A) True  
+A|True|Q47  
+B|False|Q46R1 
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q46R1
+Question_title|GATE FAILURE
+Narrative|An OR gate stands before you—a single true input is enough to open it. Reject all-false to proceed.  
+Hint|OR = any one input true = true.  
+Question|OR gate outputs 0 if both inputs are 0.  
+Correct_answer|A) True  
+A|True|Q47 
+B|False|Q47  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q47
+Question_title|SYNTAX ERROR
+Narrative|The terminal beeps—empty brackets aren’t valid. Remember the symbol that means “not equal” in code.  
+Hint|Think C++/Java-style operators.  
+Question|What does '!=' mean in programming?  
+Correct_answer|C) Not equal  
+A|Equals|Q47R1  
+B|And|Q47R2 
+C|Not equal|Q48 
+D|Add|Q47R3  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q47R1
+Question_title|UNMATCHED OPERATOR
+Narrative|Your selection mimics AND, but this isn’t the right operator—recognize the double-equals that test equality.  
+Hint|Focus on conditionals.  
+Question|The '==' opretator checks if two values are equal.  
+Correct_answer|A) True  
+A|True|Q48  
+B|False|Q48  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q47R2
+Question_title|CONFUSED CHECK
+Narrative|Floating in the void of comparison, choose the operator that actually tests for equality in C++.  
+Hint|Check syntax rules in C++.  
+Question|Which operator is used for comparison?  
+Correct_answer|A) ==  
+A|==|Q48  
+B|=|Q48 
+C|!=|48  
+D|&&|Q48  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q47R3
+Question_title|PACKET FILTER PUZZLE
+Narrative|A smoky haze of packets drifts through—identify the OSI layer where basic filters examine headers.  
+Hint|Think about which layer inspects packet headers.  
+Question|At which OSI layer does a basic packet filter firewall operate?  
+Correct_answer|B) Network (Layer 3)  
+A|Physical (Layer 1)|Q48 
+B|Network (Layer 3)|Q48 
+C|Transport (Layer 4)|Q48  
+D|Application (Layer 7)|Q48  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q48
+Question_title|PORT BLOCK CHECK
+Narrative|An iron gate bears port numbers—443 stands for secure web. Choose the one trusted by HTTPS.  
+Hint|HTTPS uses port 443.  
+Question|Which TCP port is commonly used for HTTPS?  
+Correct_answer|C) 443  
+A|25|Q48R1  
+B|21|Q48R2
+C|443|Q49 
+D|110|Q48R3  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q48R1
+Question_title|STATEFUL INSPECTION
+Narrative|Connections ebb and flow like tides—only a firewall that tracks their state can stand firm. Prove your understanding.  
+Hint|Stateful firewalls track sessions.  
+Question|A stateful firewall tracks the state of network connections.  
+Correct_answer|A) True  
+A|True|Q49  
+B|False|Q49  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q48R2
+Question_title|BASE64
+Narrative|An encrypted clue appears as Base64—decode it to reveal the hidden phrase.  
+Hint|‘SGVsbG8=’ is common.  
+Question|What does `SGVsbG8=` decode to?  
+Correct_answer|D) Hello  
+A|Hell0|Q49  
+B|Hel|Q49  
+C|Hellos|Q49  
+D|Hello|Q49 
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q48R3
+Question_title|RSA SMALL
+Narrative|A small RSA puzzle spins in the lock mechanism—compute the modular power to open it.  
+Hint|Decrypt with private key d=3, n=33.  
+Question|Cipher 10^3 mod 33 =?  
+Correct_answer|B) 1  
+A|10|Q49  
+B|1|Q49  
+C|0|Q49  
+D|11|Q49  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q49
+Question_title|DIFFIE-HELLMAN
+Narrative|Two mathematicians stand apart but share a secret—use Diffie-Hellman to bridge them.  
+Hint|Compute g^ab mod p.  
+Question|If p=23, g=5, a=6, b=15, what's shared key `(5^6)^15 mod23`?  
+Correct_answer|C) 2  
+A|5|Q49R1 
+B|3|Q49R2  
+C|2|Q60 
+D|7|Q49R3  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q49R1
+Question_title|HASH COLLISION
+Narrative|A hash function reduces messages to numbers; find two inputs that collide under its simple rule.  
+Hint|Use mod10.  
+Question|Which pairs collide under `h(x)=x mod10`?  
+Correct_answer|A) 12,22  
+A|12,22|Q60 
+B|5,6|Q60  
+C|10,11|Q60  
+D|7,17|Q60  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q49R2
+Question_title|DIGITAL SIGNATURE
+Narrative|A digital scroll waits for trust—decipher its signature to ensure authenticity.  
+Hint|Use public key to decrypt hash.  
+Question|Which step verifies a digital signature?  
+Correct_answer|D) Decrypt hash with public key  
+A|Encrypt data|Q60 
+B|Hash message|Q60  
+C|Sign with private key|Q60  
+D|Decrypt hash with public key|Q60  
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q49R3
+Question_title|OFF-BY-ONE DEBUG
+Narrative|A persistent loop repeats one time too many; adjust the comparison to escape infinite recursion.  
+Hint|Adjust comparison.  
+Question|Which fix corrects for(i=0;i<=n;i++) to not overflow?  
+Correct_answer|B) i<n  
+A|i<=n+1|Q60  
+B|i<n|Q60
+C|i<=n-1|Q60  
+D|i++|Q60 
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60
+Question_title|ANTIVIRUS REASSEMBLED
+Narrative|Your journey reaches its zenith— the antivirus stands whole once more, and MalX’s reign of chaos ends here. Celebrate your triumph!
+Hint|Enjoy your triumph.
+Question|You have completed Level 2’s challenge.
+Correct_answer|A) True
+A|True|END
+B|False|Q60R1
+END_QUESTION
+
+BEGIN_QUESTION
+ID|Q60R1
+Question_title|ALMOST VICTORY
+Narrative|You’ve succeeded but can refine your performance in the next level.
+Hint|Review what you learned before proceeding.
+Question|Ready to begin Level 3?
+Correct_answer|A) Yes
+A|Yes|END
+B|No|END
+END_QUESTION
